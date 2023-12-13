@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  
+  align-items: center;
+
+  padding: 0 20px;
+
+  border-bottom: 1px solid rgb(230, 223, 223);
+
+  font-size: 24px;
+}
+
+header nav ul{
+  display: flex;
+  gap: 20px;
+
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+li, a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  
+  gap: 30px;
+
+  margin: 50px;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+
+  align-items: flex-end;
+}
+
+.view {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 20px;
+
+  width: 500px;
+
+  border: 2px solid rgb(230, 223, 223);
+
+  padding: 20px 40px;
+}
+
+.details h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.details li {
+  font-size: 18px;
+}
+
+.card {
+  border-radius: 10px;
+  width: 250px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  
+  border-radius: 10px;
+}
+
+.cardBig {
+  width: 400px;
+}
+
+.cardBig img {
+  max-width: 100%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  padding: 8px 13px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.button-blank:hover {
+  background-color: rgb(221, 221, 221);
+}
+
+.button-yellow {
+  background-color: rgb(255, 255, 83);
+}
+
+.button-yellow:hover {
+  background-color: rgb(221, 221, 78);
+}
+
+.button-green {
+  background-color: rgb(59, 175, 59);
+  border: none;
+}
+
+.button-green:hover {
+  background-color: rgb(0, 150, 0);
+}
+
+.button-red {
+  background-color: rgb(255, 41, 41);
+}
+
+.button-red:hover {
+  background-color: rgb(204, 0, 0);
+}
+
+input {
+  cursor: pointer;
+}
+
+.form-wrap {
+  display: flex;
+  gap: 20px;
+
+  align-items: center;
+}
+
+.form-label {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.form-input {
+  font-size: 20px;
+  border: 1px solid rgb(230, 223, 223);
+  padding: 5px;
+
+  border-radius: 10px;
+}

@@ -1,0 +1,11 @@
+D:\Projetos\LibraryMVC\publish\LibraryMVC.exe
+D:\Projetos\LibraryMVC\publish\appsettings.Development.json
+D:\Projetos\LibraryMVC\publish\appsettings.json
+D:\Projetos\LibraryMVC\publish\LibraryMVC.dll
+D:\Projetos\LibraryMVC\publish\LibraryMVC.deps.json
+D:\Projetos\LibraryMVC\publish\LibraryMVC.runtimeconfig.json
+D:\Projetos\LibraryMVC\publish\LibraryMVC.pdb
+D:\Projetos\LibraryMVC\publish\Microsoft.AspNetCore.JsonPatch.dll
+D:\Projetos\LibraryMVC\publish\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Projetos\LibraryMVC\publish\Newtonsoft.Json.dll
+D:\Projetos\LibraryMVC\publish\Newtonsoft.Json.Bson.dll

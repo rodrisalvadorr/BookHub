@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>@ViewData["Title"] - LibraryMVC</title>
+    
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    
+</head>
+<body>
+    <header>
+    LibraryMVC
+    <nav>
+      <ul>
+        <li>
+            <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+        </li>
+        <li>
+            <a asp-area="" asp-controller="Livros" asp-action="Index">Livros</a>
+        </li>
+        <li>
+            <a asp-area="" asp-controller="Series" asp-action="Index">Series</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    @RenderBody()
+  </main>
+</body>
+</html>

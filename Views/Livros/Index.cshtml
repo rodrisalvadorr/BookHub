@@ -1,0 +1,18 @@
+@model IEnumerable<LibraryMVC.Models.LivroViewModel>
+
+@{
+  ViewBag.Title = "Livros";
+}
+
+@Html.ActionLink("Incluir Novo Livro", "Create", null, new { @class = "button button-blank"})
+
+<div class="list">
+  @foreach (var item in Model)
+  {
+    <div class="card">
+      <a href="@Url.Action("Details", "Livros", new { id = item.Id})">
+        <img src="@item.Capa">
+      </a>
+    </div>
+  }
+</div>

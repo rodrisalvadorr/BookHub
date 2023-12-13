@@ -1,0 +1,46 @@
+@model LibraryMVC.Models.LivroViewModel
+
+@{
+    ViewBag.Title = "Detalhes do Livro";
+}
+
+<div class="view">
+    <div class="cardBig">
+        <img src="@Model.Capa">
+    </div>
+
+    <div class="details">
+        <h1>@Html.DisplayFor(model => model.Titulo)</h1>
+        <ul>
+            <li>
+                <strong>@Html.DisplayNameFor(model => model.Autor)</strong>
+                @Html.DisplayFor(model => model.Autor)
+            </li>
+            <li>
+                <strong>@Html.DisplayNameFor(model => model.Editora)</strong>
+                @Html.DisplayFor(model => model.Editora)
+            </li>
+            <li>
+                <strong>@Html.DisplayNameFor(model => model.Idioma)</strong>
+                @Html.DisplayFor(model => model.Idioma)
+            </li>
+            <li>
+                <strong>@Html.DisplayNameFor(model => model.Categoria)</strong>
+                @Html.DisplayFor(model => model.Categoria)
+            </li>
+            <li>
+                <strong>@Html.DisplayNameFor(model => model.SerieId)</strong>
+                @Html.DisplayFor(model => model.SerieId)
+            </li>
+            <li>
+                <strong>@Html.DisplayNameFor(model => model.Status)</strong>
+                @Html.DisplayFor(model => model.Status)
+            </li>
+        </ul>
+        <div class="buttons">
+            @Html.ActionLink("Voltar", "Index", new { id = @Model.Id}, new { @class = "button button-blank"})
+            @Html.ActionLink("Editar", "Edit", new { id = @Model.Id}, new { @class = "button button-yellow"})
+            @Html.ActionLink("Deletar", "Delete", new { id = @Model.Id}, new { @class = "button button-red"})
+        </div>
+    </div>
+</div>

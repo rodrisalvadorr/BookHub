@@ -1,0 +1,70 @@
+@model LibraryMVC.Models.LivroViewModel
+
+@{
+  ViewBag.Title = "Editar Livro";
+}
+
+<div class="view">
+  <div class="cardBig">
+    <img src="@Model.Capa">
+  </div>
+
+  @using (Html.BeginForm())
+  {
+    @Html.AntiForgeryToken()
+    <div class="details">
+      <div class="form-wrap">
+        @Html.LabelFor(model => model.Titulo, htmlAttributes: new { @class = "form-label"})
+        <div>
+          @Html.EditorFor(model => model.Titulo, new { htmlAttributes = new { @class = "form-input"}})
+        </div>
+      </div>
+      <div class="form-wrap">
+        @Html.LabelFor(model => model.Autor, htmlAttributes: new { @class = "form-label"})
+        <div>
+          @Html.EditorFor(model => model.Autor, new { htmlAttributes = new { @class = "form-input"}})
+        </div>
+      </div>
+      <div class="form-wrap">
+        @Html.LabelFor(model => model.Editora, htmlAttributes: new { @class = "form-label"})
+        <div>
+          @Html.EditorFor(model => model.Editora, new { htmlAttributes = new { @class = "form-input"}})
+        </div>
+      </div>
+      <div class="form-wrap">
+        @Html.LabelFor(model => model.Idioma, htmlAttributes: new { @class = "form-label"})
+        <div>
+          @Html.EditorFor(model => model.Idioma, new { htmlAttributes = new { @class = "form-input"}})
+        </div>
+      </div>
+      <div class="form-wrap">
+        @Html.LabelFor(model => model.Categoria, htmlAttributes: new { @class = "form-label"})
+        <div>
+          @Html.EditorFor(model => model.Categoria, new { htmlAttributes = new { @class = "form-input"}})
+        </div>
+      </div>
+      <div class="form-wrap">
+        @Html.LabelFor(model => model.SerieId, htmlAttributes: new { @class = "form-label"})
+        <div>
+          @Html.EditorFor(model => model.SerieId, new { htmlAttributes = new { @class = "form-input"}})
+        </div>
+      </div>
+      <div class="form-wrap">
+        @Html.LabelFor(model => model.Status, htmlAttributes: new { @class = "form-label"})
+        <div>
+          @Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "form-input"}})
+        </div>
+      </div>
+      <div class="form-wrap">
+        @Html.LabelFor(model => model.Capa, htmlAttributes: new { @class = "form-label"})
+        <div>
+          @Html.EditorFor(model => model.Capa, new { htmlAttributes = new { @class = "form-input"}})
+        </div>
+      </div>
+      <div class="buttons">
+        @Html.ActionLink("Voltar", "Details", new { id = @Model.Id}, new { @class = "button button-blank"})
+        <input type="submit" value="Salvar" class="button button-green">
+      </div>
+    </div>
+  }
+</div>
